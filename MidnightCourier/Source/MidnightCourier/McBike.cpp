@@ -1025,7 +1025,8 @@ void AMcBike::UpdateVisuals(float Dt)
 	else
 	{
 		const FQuat YawPitch = FRotator(FMath::RadiansToDegrees(Pitch), FMath::RadiansToDegrees(Yaw), 0.f).Quaternion();
-		const FQuat LeanQ = FQuat(FVector::ForwardVector, Lean);
+		// FRotator roll is minus the rotation about +X: lean into the turn (right turn = right side down).
+		const FQuat LeanQ = FQuat(FVector::ForwardVector, -Lean);
 		const FVector Pivot(0, 0, -HubDrop * McUnits::M);
 		const FVector LeanOffset = LeanQ.RotateVector(-Pivot) + Pivot;
 		const FQuat Total = YawPitch * LeanQ;

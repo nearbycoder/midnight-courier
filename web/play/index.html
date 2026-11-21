@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Midnight Courier</title>
+<link rel="icon" href="data:,">
+<meta name="description" content="One package. Ridiculously fragile. Two minutes to get it down the hill. A downhill bike game in a rainy neon city.">
+<link rel="stylesheet" href="css/hud.css">
+<script type="importmap">
+{
+	"imports": {
+		"three": "./vendor/three/three.module.js",
+		"three/addons/": "./vendor/three/addons/",
+		"three-mesh-bvh": "./vendor/three-mesh-bvh/index.module.js"
+	}
+}
+</script>
+</head>
+<body>
+<canvas id="view"></canvas>
+<div id="hud"></div>
+<canvas id="hudlines"></canvas>
+<div id="loading">
+	<div class="ld-title"><span>MIDNIGHT</span><span class="amber">COURIER</span></div>
+	<div class="ld-bar"><div id="ld-fill"></div></div>
+	<div id="ld-text">loading the city&hellip;</div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
