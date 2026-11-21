@@ -1,4 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#16a34a"/>
-  <text x="32" y="32" dy="0.35em" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="26" font-weight="600" fill="#ffffff">MC</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1026"/>
+      <stop offset="0.55" stop-color="#1a1238"/>
+      <stop offset="1" stop-color="#3a1426"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.62" r="0.5">
+      <stop offset="0" stop-color="#ffb347" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffb347" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3d6" stop-opacity="0.0"/>
+      <stop offset="1" stop-color="#fff3d6" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="top" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8b878"/><stop offset="1" stop-color="#c89052"/></linearGradient>
+    <linearGradient id="left" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b57a3e"/><stop offset="1" stop-color="#8a5a2c"/></linearGradient>
+    <linearGradient id="right" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9c6532"/><stop offset="1" stop-color="#6e4520"/></linearGradient>
+    <clipPath id="sq"><rect x="100" y="100" width="824" height="824" rx="185"/></clipPath>
+  </defs>
+  <g clip-path="url(#sq)">
+    <rect x="100" y="100" width="824" height="824" fill="url(#bg)"/>
+    <!-- city glow and window lights -->
+    <g fill="#ffcf7a" opacity="0.35">
+      <rect x="150" y="300" width="26" height="40"/><rect x="200" y="300" width="26" height="40"/><rect x="150" y="380" width="26" height="40"/>
+      <rect x="820" y="260" width="26" height="40"/><rect x="860" y="340" width="26" height="40"/><rect x="820" y="420" width="26" height="40"/>
+    </g>
+    <rect x="100" y="100" width="824" height="824" fill="url(#glow)"/>
+    <!-- neon stripe -->
+    <rect x="100" y="210" width="824" height="10" fill="#ff2e88" opacity="0.8"/>
+    <rect x="100" y="200" width="824" height="30" fill="#ff2e88" opacity="0.15"/>
+    <!-- rain -->
+    <g stroke="#b9d3ff" stroke-width="5" stroke-linecap="round" opacity="0.45">
+      <line x1="180" y1="130" x2="160" y2="230"/><line x1="300" y1="170" x2="280" y2="270"/><line x1="420" y1="120" x2="400" y2="220"/>
+      <line x1="640" y1="150" x2="620" y2="250"/><line x1="760" y1="110" x2="740" y2="210"/><line x1="880" y1="180" x2="860" y2="280"/>
+      <line x1="230" y1="520" x2="210" y2="620"/><line x1="830" y1="560" x2="810" y2="660"/><line x1="160" y1="760" x2="140" y2="860"/><line x1="880" y1="780" x2="860" y2="880"/>
+    </g>
+    <!-- wet ground reflection -->
+    <rect x="100" y="800" width="824" height="124" fill="#05070f" opacity="0.6"/>
+    <ellipse cx="512" cy="840" rx="300" ry="40" fill="#ffb347" opacity="0.25"/>
+    <!-- the package: isometric box -->
+    <g transform="translate(512 560) rotate(-6)">
+      <polygon points="0,-250 230,-130 0,-10 -230,-130" fill="url(#top)"/>
+      <polygon points="-230,-130 0,-10 0,250 -230,130" fill="url(#left)"/>
+      <polygon points="230,-130 0,-10 0,250 230,130" fill="url(#right)"/>
+      <!-- tape -->
+      <polygon points="-40,-230 40,-230 270,-110 190,-110" fill="#d8231a" opacity="0" />
+      <polygon points="-125,-185 -85,-205 155,-80 115,-60" fill="#d8231a"/>
+      <polygon points="-18,-20 18,-20 18,240 -18,240" fill="#b81c14"/>
+      <polygon points="-125,-185 -85,-205 -85,-195 -125,-175" fill="#b81c14"/>
+      <!-- FRAGILE label on the left face -->
+      <g transform="matrix(1 0.52 0 1 -210 -20)">
+        <rect x="0" y="0" width="185" height="62" fill="#f2e6cf"/>
+        <text x="92" y="47" text-anchor="middle" font-family="Impact, Anton, 'Arial Narrow', sans-serif" font-size="46" font-weight="900" fill="#c8181a">FRAGILE</text>
+      </g>
+      <!-- stemmed glass icon on the right face -->
+      <g transform="matrix(1 -0.52 0 1 60 120)" fill="none" stroke="#2a1608" stroke-width="10" stroke-linecap="round">
+        <path d="M30 -40 Q30 10 60 10 Q90 10 90 -40 Z"/><line x1="60" y1="10" x2="60" y2="50"/><line x1="40" y1="52" x2="80" y2="52"/>
+      </g>
+      <!-- edge highlight -->
+      <polyline points="-230,-130 0,-10 230,-130" fill="none" stroke="#fff0d0" stroke-width="5" opacity="0.6"/>
+    </g>
+    <!-- speed lines -->
+    <g stroke="#ffb347" stroke-width="12" stroke-linecap="round" opacity="0.85">
+      <line x1="140" y1="470" x2="230" y2="470"/><line x1="120" y1="540" x2="250" y2="540"/><line x1="150" y1="610" x2="220" y2="610"/>
+    </g>
+  </g>
 </svg>

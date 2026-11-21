@@ -1,0 +1,14 @@
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+*.xcworkspace
+.DS_Store
+__pycache__/
+*.blend1
+MidnightCourier/Art/Export/
+MidnightCourier/Art/Preview/
+MidnightCourier/Build/Mac/FileOpenOrder/
+Release/
+MidnightCourier/Art/Audio/
+node_modules/

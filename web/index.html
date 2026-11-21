@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Midnight Courier — one fragile package, one rainy hill, two minutes</title>
+  <meta name="description" content="A downhill bike game in Unreal Engine 5. Bomb down staircases, thread the alley and jump the canal to beat the clock, but every hard landing rattles the antique glass on your back. Play in your browser or download for Mac.">
+  <meta property="og:title" content="Midnight Courier">
+  <meta property="og:description" content="One package. Ridiculously fragile. Two minutes to get it down the hill.">
+  <meta property="og:image" content="media/og.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="media/icon.png">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top"><img src="media/icon.png" alt=""><span>Midnight Courier</span></a>
+    <nav>
+      <a href="#hook">The hook</a>
+      <a href="#routes">Routes</a>
+      <a href="#feel">The ride</a>
+      <a href="#gallery">Gallery</a>
+      <a class="cta-small" href="play/">Play now</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <video class="hero-video" src="media/hero-loop.mp4" poster="media/hero.jpg" autoplay muted loop playsinline></video>
+    <div class="hero-shade"></div>
+    <div class="rain" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="kicker">A downhill delivery game · Unreal Engine 5</p>
+      <h1><span>Midnight</span><span class="amber">Courier</span></h1>
+      <p class="tagline">One package. Ridiculously fragile.<br>Two minutes to get it down the hill.</p>
+      <div class="buttons">
+        <a class="btn primary" href="play/">Play in your browser</a>
+        <a class="btn" href="https://github.com/nearbycoder/midnight-courier/releases/latest">Download for Mac</a>
+        <a class="btn ghost" href="#trailer">Watch the trailer</a>
+      </div>
+      <p class="fine">Free · keyboard or gamepad · Apple silicon Mac app or any modern browser</p>
+    </div>
+    <div class="hero-hud" aria-hidden="true">
+      <div class="hud-time"><small>TIME LEFT</small>1:42.19</div>
+      <div class="hud-pack"><small>PACKAGE <em>FRAGILE · ANTIQUE GLASS</em></small><b>100%</b><i></i></div>
+    </div>
+  </section>
+
+  <section class="band" id="hook">
+    <div class="wrap two">
+      <div>
+        <p class="kicker">The hook</p>
+        <h2>The fastest route isn't always the winning one.</h2>
+        <p>Pick up a box of antique glass at the Lucky Lantern on top of the hill. Drop it at the Hotel Marlowe on the harbour. You have two minutes, a bike with no suspension worth the name, and a whole rainy neighbourhood of stairs, kerbs and alleys between you and the door.</p>
+        <p>The tip pays for speed <em>and</em> for care: a dollar for every second to spare, times what's left of the package, plus a bonus if it arrives pristine. Shave twenty seconds off with the stairs and crack the box, and you'll earn less than the rider who took the long way round.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-row"><span>Delivery fee + early bonus</span><b>$20 + $1/s</b></div>
+        <div class="tip-row"><span>Care multiplier</span><b>× condition<sup>1.5</sup></b></div>
+        <div class="tip-row teal"><span>Pristine bonus (95%+)</span><b>+$15</b></div>
+        <div class="tip-sep"></div>
+        <div class="tip-grades"><span class="g s">S</span><span>$85</span><span class="g">A</span><span>$65</span><span class="g">B</span><span>$48</span><span class="g">C</span><span>$32</span></div>
+        <p class="quote">“Is this… glitter? It used to be a swan.”</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="trailer" id="trailer">
+    <div class="wrap">
+      <p class="kicker">Trailer</p>
+      <video src="media/trailer.mp4" poster="media/hero.jpg" controls playsinline preload="metadata"></video>
+    </div>
+  </section>
+
+  <section class="band dark" id="routes">
+    <div class="wrap">
+      <p class="kicker">One neighbourhood, three gambles</p>
+      <h2>Lantern Hill</h2>
+      <p class="lede">The safe way down — Crown Street, the Kiln Road hairpin, Market Street, Lamp Hill, the bridge and Pier Lane — takes about a minute thirty-five. Three shortcuts cut it to about a minute. Each one costs you something.</p>
+      <div class="cards">
+        <article class="card">
+          <img src="media/steps.jpg" alt="The courier bombing down Lantern Steps under paper lanterns" loading="lazy">
+          <h3>Lantern Steps</h3>
+          <p>Four flights straight down between the hairpin's legs. Roll them and every step rattles the box. Hop a flight and you'd better brace before you land.</p>
+          <span class="tag">saves ~15 s</span>
+        </article>
+        <article class="card">
+          <img src="media/alley.jpg" alt="Riding through Needle Alley under a bare bulb" loading="lazy">
+          <h3>Needle Alley</h3>
+          <p>A three-metre slot through the block with two short stair sets, dumpsters and a bend after every landing. Fast if you're clean, expensive if you're not.</p>
+          <span class="tag">saves ~6 s</span>
+        </article>
+        <article class="card">
+          <img src="media/jump.jpg" alt="Launching off the dock kicker over the canal" loading="lazy">
+          <h3>The dock jump</h3>
+          <p>A plank kicker on the quay and twelve metres of canal. Hit it at 40 km/h and you land on Pier Lane. Hit it at 35 and you swim.</p>
+          <span class="tag">saves ~12 s</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="feel">
+    <div class="wrap two">
+      <div>
+        <p class="kicker">The ride</p>
+        <h2>Physics you can feel through the box.</h2>
+        <ul class="feat">
+          <li><b>Real suspension.</b> Two sphere-swept wheels on springs and dampers at 240 Hz. Kerbs jolt, stairs chatter, ramps throw you.</li>
+          <li><b>Your legs are the last spring.</b> The package rides on your back. Hold brace to stand on the pedals and soak up a landing; brace in the last instant for a <em>feather landing</em> that costs almost nothing.</li>
+          <li><b>Hop.</b> Release brace to pop the front wheel — over kerbs, off the top of a flight, out of trouble.</li>
+          <li><b>Lean, grip and slide.</b> Lean-limited steering, a rear-brake power slide for the hairpin, and air control to line up your landings.</li>
+          <li><b>Instant restart.</b> One key and you're back at the noodle shop with the countdown already running, racing the ghost of your best run.</li>
+        </ul>
+      </div>
+      <figure class="tall"><img src="media/rider.jpg" alt="The courier in a yellow rain jacket with the fragile package strapped to their back" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="band dark" id="gallery">
+    <div class="wrap">
+      <p class="kicker">Gallery</p>
+      <h2>A wet night on Lantern Hill</h2>
+      <div class="gallery">
+        <a href="media/g1.jpg"><img src="media/g1.jpg" alt="Crown Street in the rain" loading="lazy"></a>
+        <a href="media/g2.jpg"><img src="media/g2.jpg" alt="Market Street under strings of lights" loading="lazy"></a>
+        <a href="media/g3.jpg"><img src="media/g3.jpg" alt="The Kiln Road hairpin" loading="lazy"></a>
+        <a href="media/g4.jpg"><img src="media/g4.jpg" alt="Top of Lantern Steps" loading="lazy"></a>
+        <a href="media/g5.jpg"><img src="media/g5.jpg" alt="Gull Bridge over the canal" loading="lazy"></a>
+        <a href="media/g6.jpg"><img src="media/g6.jpg" alt="The delivery results screen" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="play">
+    <div class="wrap two">
+      <div>
+        <p class="kicker">Controls</p>
+        <h2>Pick it up in ten seconds.</h2>
+        <table class="keys">
+          <tr><td>W / RT</td><td>Pedal</td></tr>
+          <tr><td>S / LT</td><td>Brake</td></tr>
+          <tr><td>A D / left stick</td><td>Steer · in the air, W S tilt the bike</td></tr>
+          <tr><td>Space / A</td><td>Hold to brace, release to hop</td></tr>
+          <tr><td>Shift / X</td><td>Power slide</td></tr>
+          <tr><td>R / Y</td><td>Instant restart</td></tr>
+          <tr><td>Esc / Start</td><td>Pause and settings</td></tr>
+        </table>
+      </div>
+      <div class="get">
+        <a class="get-card" href="play/">
+          <b>Play in your browser</b>
+          <span>No install. Chrome, Safari, Edge or Firefox on a recent computer. Keyboard or gamepad.</span>
+        </a>
+        <a class="get-card" href="https://github.com/nearbycoder/midnight-courier/releases/latest">
+          <b>Download for Mac</b>
+          <span>The full Unreal Engine 5 version, with Lumen lighting, at up to 4K and 120 fps. Apple silicon, macOS 14+. Right-click → Open on first launch.</span>
+        </a>
+        <a class="get-card" href="https://github.com/nearbycoder/midnight-courier">
+          <b>Source on GitHub</b>
+          <span>C++ game code, the Blender scripts that generate every model and the whole city, procedural materials and synthesized audio.</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Midnight Courier · built with Unreal Engine 5, Blender and three.js · every model, material and sound generated by code.</p>
+    <p>Fonts: Anton and Barlow Condensed (SIL Open Font License).</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,20 @@
+MIDNIGHT COURIER
+One package. Ridiculously fragile. Two minutes to get it down the hill.
+
+Requirements: a Mac with Apple silicon (M1 or later), macOS 14 or later.
+
+First launch: the app is signed ad hoc, not notarized. macOS will refuse to open it the first time.
+Right-click (or Control-click) "Midnight Courier.app", choose Open, then Open again.
+If macOS still blocks it: System Settings > Privacy & Security > "Open Anyway".
+
+Controls (keyboard / gamepad)
+  W / RT ........ pedal                 S / LT ......... brake
+  A D / stick ... steer                 SPACE / A ...... hold to brace, release to hop
+  SHIFT / X ..... power slide           R / Y .......... instant restart
+  Esc / Start ... pause and settings    G / Back ....... ghost on or off
+In the air, W and S tilt the bike.
+
+Brace in the last moment before you land for a feather landing.
+The tip pays for speed and for care: the fastest route isn't always the winning one.
+
+Fonts: Anton and Barlow Condensed, SIL Open Font License (see Fonts/).
